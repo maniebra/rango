@@ -1,0 +1,12 @@
+# +-----------------------------------------------+
+# | Python Telegram bot gitignore file template   |
+# | Created by Mani Ebrahimi, Sep 2024            |
+# | Modify this file to fit your project          |
+# +-----------------------------------------------+
+
+
+# DOTENV FILES
+.env
+
+# VIRTUAL ENVIRONMENT
+venv/

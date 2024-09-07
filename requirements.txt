@@ -1,0 +1,12 @@
+# TO AVOID ISSUES WITH CONTAINERS
+setuptools == 74.1.2
+
+# TELEGRAM BOT LIB
+telepot == 12.7
+
+# DATABASE RELATED TOOLS
+peewee == 3.17.6
+psycopg2 == 2.9.9
+
+# DOTENV
+python-dotenv == 1.0.1
