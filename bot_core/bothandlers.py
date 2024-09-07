@@ -24,7 +24,7 @@ def on_chat_message(msg):
             send_message(chat_id, 'I do not understand you. please try again!')
 
         if callable(command):
-            command(bot, chat_id)
+            command(bot, chat_id, msg)
         else:
             send_message(chat_id, 'This command it not available. Please try again.')
 

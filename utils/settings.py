@@ -17,4 +17,5 @@ DATABASE = {
 
 LOCALES = ['en', 'fa']
 
-ADMIN_USERNAME = 'shlurpt'
+ADMIN_USERNAME = dotenv.get_key('.env', 'DEFAULT_ADMIN_USERNAME').split(',')
+ADMIN_TGID = map(int, dotenv.get_key('.env', 'DEFAULT_ADMIN_TGID').split(','))

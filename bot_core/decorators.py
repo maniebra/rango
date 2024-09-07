@@ -7,6 +7,7 @@ def html_text_response(func):
         chat_id = args[1]
         response = func(*args, **kwargs)
         bot.sendMessage(chat_id, response, parse_mode='HTML')
+        return response
     return wrapper
 
 def normal_text_response(func):
@@ -15,4 +16,5 @@ def normal_text_response(func):
         chat_id = args[1]
         response = func(*args, **kwargs)
         bot.sendMessage(chat_id, response)
+        return response
     return wrapper
