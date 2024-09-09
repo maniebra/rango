@@ -5,6 +5,8 @@ import utils.settings as settings
 class User(Model):
     tg_id = BigIntegerField(unique=True)
     tg_username = CharField(max_length=50, unique=True)
+    first_name = CharField(max_length=64)
+    last_name = CharField(max_length=64, null=True)
     is_admin = BooleanField(constraints=[SQL('DEFAULT FALSE')])
     is_staff = BooleanField(constraints=[SQL('DEFAULT FALSE')])
     is_active = BooleanField(constraints=[SQL('DEFAULT TRUE')])
